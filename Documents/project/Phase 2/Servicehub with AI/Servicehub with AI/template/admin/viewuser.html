@@ -1,0 +1,48 @@
+
+{% extends 'admin/adminbase.html' %}
+{% block content %}
+
+
+<div class="bs-docs-example">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th> Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone No</th>
+               
+               
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>
+                    {{i.1}}
+                </td>
+
+
+                <td>
+                    {{i.2}}
+                </td>
+
+                <td>
+                    {{i.3}}
+                </td>
+                <td>
+                    {{i.4}}
+                </td>
+            
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}

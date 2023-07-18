@@ -1,0 +1,49 @@
+
+{% extends 'sc/scbase.html' %}
+{% block content %}
+
+
+<div class="bs-docs-example">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th>Company</th>
+                <th>Booking Date</th>
+               
+                <th>problem</th>
+                <th>Finishing date</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>
+                    {{i.1}}
+                </td>
+
+
+                <td>
+                    {{i.2}}
+                </td>
+
+                <td>
+                    {{i.3}}
+                </td>
+               
+                <td>
+                    {{i.7}}
+                </td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,56 @@
+
+{% extends 'user/userbase.html' %}
+{% block content %}
+	<!--/contact-->
+	<section class="contact py-5">
+		<div class="container py-md-4 mt-md-3">
+			<h2 class="heading-agileinfo">Register Now<span></span></h2>
+			<span class="w3-line black"></span>
+			<div class="inner-sec-w3layouts-agileinfo mt-md-5 pt-5">
+				
+				
+				<div class="contact_grid_right mt-5">
+                
+					
+					<form action="#" method="post">
+						{% csrf_token %} 
+						<div class="contact_left_grid" style="padding-left: 200px;">
+							<select name="district">
+								<option name="">select your district</option>
+								
+                                <option name="kasargod">kasargod</option>
+                                <option name="kannur">kannur</option>
+                                <option name="kozhikkode">kozhikkode</option>
+                                <option name="wayanad">wayanad</option>
+                                <option name="palakkad">palakkad</option>
+                                <option name="thrissur">thrissur</option>
+                                <option name="ernakulam">ernakulam</option>
+                                <option name="alappuzha">alappuzha</option>
+                                <option name="kottayam">kottayam</option>
+                                <option name="idukki">idukki</option>
+                                <option name="kollam">kollam</option>
+                                <option name="pathanamthitta">pathanamthitta</option>
+                                <option name="trivandram">trivandram</option>
+
+								
+							</select>
+                            
+							<input type="submit" value="Register Now">
+							
+							<div class="clearfix"> </div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//contact-->
+
+
+	{% if msg %}
+	<script>alert('{{msg}}');</script>
+	{% endif %}
+
+
+	{% endblock %}
+

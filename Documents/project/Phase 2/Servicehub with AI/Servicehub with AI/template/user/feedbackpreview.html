@@ -1,0 +1,48 @@
+{% extends 'user/userbase.html' %}
+{% block content %}
+
+
+<div class="bs-docs-example">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th>Company</th>
+                
+                <th>problem</th>
+                <th>status</th>
+                <th>Add Feedback</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>
+                    {{i.1}}
+                </td>
+
+
+               
+                <td>
+                    {{i.3}}
+                </td>
+                <td>
+                    {{i.4}}
+                </td>
+                <td>
+                    <a href="/feedback/?id={{i.6}}">feedback</a>
+                </td>
+                
+              
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,59 @@
+
+{% extends 'user/userbase.html' %}
+{% block content %}
+
+
+<div class="bs-docs-example">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th> Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone No</th>
+                <th>Company</th>
+                <th>View Location</th>
+                <th>Book Now</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr><td>
+                {{forloop.counter}}
+            </td>
+                <td>
+                    {{i.1}}
+                </td>
+
+
+                <td>
+                    {{i.2}}
+                </td>
+
+                <td>
+                    {{i.3}}
+                </td>
+                <td>
+                    {{i.4}}
+                </td>
+                <td>
+                    {{i.5}}
+                </td>
+                <td>
+                    <a href="/viewlocation/?loc={{i.3}}">View Location</a>
+                 </td>
+                <td>
+                   <a href="/booking/?id={{i.0}}">Book Now</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}

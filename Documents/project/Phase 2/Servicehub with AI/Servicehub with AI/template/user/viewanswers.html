@@ -1,0 +1,36 @@
+
+{% extends 'user/userbase.html' %}
+{% block content %}
+
+<div class="bs-docs-example">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th> Question</th>
+                <th>Answers</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in answers %}
+            <tr>
+               
+                <td>
+                    {{i.2}}
+                </td>
+                <td>
+                    {{i.3}}
+                </td>
+                
+            </tr>
+            {% endfor %}
+            <tr><td>If above solutions are not worked please click this...<button><a href="/search/">Go to service Center</a></button></td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}

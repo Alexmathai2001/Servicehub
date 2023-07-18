@@ -1,0 +1,230 @@
+{
+        "intents": [
+          {
+            "tag": "greeting",
+            "patterns": [
+              "Hi there",
+              "How are you",
+              "Is anyone there?",
+              "Hey",
+              "Hola",
+              "Hello",
+              "Good day"
+            ],
+            "responses": [
+              "Hello, thanks for asking",
+              "Good to see you again",
+              "Hi there, how can I help?"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "goodbye",
+            "patterns": [
+              "Bye",
+              "See you later",
+              "Goodbye",
+              "Nice chatting to you, bye",
+              "Till next time"
+            ],
+            "responses": [
+              "See you!",
+              "Have a nice day",
+              "Bye! Come back again soon."
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "thanks",
+            "patterns": [
+              "Thanks",
+              "Thank you",
+              "That's helpful",
+              "Awesome, thanks",
+              "Thanks for helping me"
+            ],
+            "responses": [
+              "Happy to help!",
+              "Any time!",
+              "My pleasure"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+              "Sorry, can't understand you",
+              "Please give me more info",
+              "Not sure I understand"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "mouse issue",
+            "patterns": [
+              "my mouse is not working properly?",
+              "mouse not working",
+              "mouse issue",
+              "mouse",
+              "mouse is not supporting"
+            ],
+            "responses": [
+              "Change you mouse, change your mouse pad, check software updates",
+              "check system updates"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Battery Drain ",
+            "patterns": [
+              "mobileBatteryLife",
+              " BatteryDrainFix",
+              " PhoneBatteryIssues"
+            ],
+            "responses": [
+              "reduce screen brightness and timeout settings",
+              "disable unnecessary background apps and notifications",
+              "enable battery saving mode or low power mode"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "sample",
+            "patterns": [
+              "alex"
+            ],
+            "responses": [
+              "hi alex",
+              "hello alex"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample1 ",
+            "patterns": [
+              "laptop freeze",
+              "laptop crash"
+            ],
+            "responses": [
+              "clean air vents with a cloth",
+              "keyboard cleaner "
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample2",
+            "patterns": [
+              "Battery won’t hold charge",
+              "notebook runs only a few minutes when unplugged"
+            ],
+            "responses": [
+              " Battery replacement"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample3 ",
+            "patterns": [
+              "excessive program load time",
+              "slow file transfers",
+              "Slow Hard Drive"
+            ],
+            "responses": [
+              "Close unnecessary programs: Make sure you're not running too many applications simultaneously, as they can consume system resources and slow down your laptop Close any unused programs or background processes that may be running Manage startup programs: Check your laptop's startup programs and disable any unnecessary ones. These programs launch automatically when you start your laptop and can significantly slow down the boot process.Remove malware and viruses: Run a thorough scan with a reliable antivirus software to detect and remove any malware or viruses that may be affecting your laptop's performance. Malicious software can consume system resources and cause slow load times."
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample 4 ",
+            "patterns": [
+              "No Internet connection",
+              " frequent time-outs while Web browsing ",
+              "Can’t Connect to Wireless Network"
+            ],
+            "responses": [
+              "Make sure wireless is turned on",
+              " smarter software tools",
+              "make sure router is broadcasting network name (SSID)"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample 5",
+            "patterns": [
+              "Green or red dots on your notebook’s screen ",
+              "Stuck Pixels"
+            ],
+            "responses": [
+              "Massage away dead pixels"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample 6 ",
+            "patterns": [
+              " Notebook won’t boot up ",
+              "System crash"
+            ],
+            "responses": [
+              "Remove the hard drive and place it into an external enclosure",
+              " Run Checkdisk"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample 7 ",
+            "patterns": [
+              "Excessive pop ups",
+              "slow downloads ",
+              "Virus or Spyware Infestation"
+            ],
+            "responses": [
+              "Install antispyware programs",
+              "use free virus scans"
+            ],
+            "context": [
+              ""
+            ]
+          },
+          {
+            "tag": "Sample 8 ",
+            "patterns": [
+              "Garbled or distorted video",
+              "Outdated Video Drivers"
+            ],
+            "responses": [
+              " Download the latest drivers"
+            ],
+            "context": [
+              ""
+            ]
+          }
+        ]
+      }

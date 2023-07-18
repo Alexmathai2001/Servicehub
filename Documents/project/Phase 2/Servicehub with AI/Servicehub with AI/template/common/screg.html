@@ -1,0 +1,85 @@
+
+{% extends 'common/commonbase.html' %}
+{% block content %}
+	<section class="contact py-5">
+		<div class="container py-md-4 mt-md-3">
+			<h2 class="heading-agileinfo">Register Now<span></span></h2>
+			<span class="w3-line black"></span>
+			<div class="inner-sec-w3layouts-agileinfo mt-md-5 pt-5">
+				
+				
+				<div class="contact_grid_right mt-5">
+                
+					
+					<form action="#" method="post">
+						<div class="contact_left_grid" style="padding-left: 200px;">
+
+							{% csrf_token %} 
+							<input type="text" name="name" placeholder="Name" required="" title="Please enter your Full Name" required pattern="[A-Z a-z]+">
+							<input type="email" name="email" placeholder="Email" required="" title="Please enter your Email Address">
+							<textarea name="address" required="" placeholder="address"></textarea>
+							<select name="district">
+								<option name="">select your district</option>
+								
+                                <option name="kasargod">kasargod</option>
+                                <option name="kannur">kannur</option>
+                                <option name="kozhikkode">kozhikkode</option>
+                                <option name="wayanad">wayanad</option>
+                                <option name="palakkad">palakkad</option>
+                                <option name="thrissur">thrissur</option>
+                                <option name="ernakulam">ernakulam</option>
+                                <option name="alappuzha">alappuzha</option>
+                                <option name="kottayam">kottayam</option>
+                                <option name="idukki">idukki</option>
+                                <option name="kollam">kollam</option>
+                                <option name="pathanamthitta">pathanamthitta</option>
+                                <option name="trivandram">trivandram</option>
+
+								
+							</select>
+							<input type="text" name="phoneno" placeholder="Phone No" required=""title="Please enter your Phone Number" required pattern="[6-9]{1}[0-9]{9}">
+
+							<select name="company">
+								<option name="">
+									select your company
+
+								</option>
+								{% for i in data %}
+								<option name="{{i.1}}">
+									{{i.1}}
+
+								</option>
+								{% endfor %}
+							</select>
+							
+
+
+
+							<input type="text" name="product" placeholder="Product type" required=""title="Please enter your Full Name" required pattern="[A-Z a-z]+">
+							<input type="text" name="aid" placeholder="Authorization id" required=""title="Please enter your Authorization id" required pattern="[0-9]+">
+							
+                            <input type="password" name="password" placeholder="password" required="">
+							<input type="password" name="cpassword" placeholder="Confirm Password" required=""><br>
+							<br>
+							<input type="submit" value="Register Now">
+							
+							<div class="clearfix"> </div>
+						</div>
+					</form>
+				</div>
+			</div>
+					</div>
+	</section>
+	{% if msg %}
+	<script>
+		alert('{{msg}}');
+	</script>
+	{% endif %}
+
+	{% if word %}
+	<script>
+		alert('{{word}}');
+	</script>
+	{% endif %}
+	<!--//contact-->
+	{% endblock %}

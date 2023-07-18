@@ -1,0 +1,62 @@
+
+{% extends 'admin/adminbase.html' %}
+{% block content %}
+
+
+<div class="bs-docs-example">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th> Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone No</th>
+                <th>Company</th>
+                <th>Product</th>
+                <th>aid</th>
+                <th>status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>
+                    {{i.1}}
+                </td>
+
+
+                <td>
+                    {{i.2}}
+                </td>
+
+                <td>
+                    {{i.3}}
+                </td>
+                <td>
+                    {{i.4}}
+                </td>
+                <td>
+                    {{i.5}}
+                </td>
+                <td>
+                    {{i.6}}
+                </td>
+                <td>
+                    {{i.7}}
+                </td>
+                <td>
+                    <a href="/approvesc/?id={{i.2}}">Approve Now/</a>
+                    <a href="/rejectsc/?id={{i.2}}">Reject Now</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}
